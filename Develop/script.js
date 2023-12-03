@@ -32,9 +32,10 @@ function writePassword() {
   if (correctChoice) {
     var newPassword = generatePassword();
     passwordText.value = newPassword;
-  } else {
-      passwordText.value = "";
-    }
+  } else if (correctChoice == false){
+
+    passwordText.value = "";
+  }
 
   };
 
@@ -85,6 +86,7 @@ function getchoices () {
   }
 
   return true;
+
 
 };
 

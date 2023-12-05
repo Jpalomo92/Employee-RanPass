@@ -57,7 +57,7 @@ function getchoices () {
   allChoices = [];
 
   //user defines the length of the password and if its not a number or less than 8 or greater than 128 it will return false
-  numberInput = parseInt(prompt("Please enter in how many many characters you would like your password to have. (8 - 128)")); //NaN
+  numberInput = parseInt(prompt("Please enter in how many characters you would like your password to have. (8 - 128)")); //NaN
   
   if (isNaN(numberInput) || numberInput < 8 || numberInput > 128) {
     alert("Please enter in a number between 8 and 128!");
